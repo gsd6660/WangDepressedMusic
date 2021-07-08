@@ -19,6 +19,11 @@
 		477119B126929E0200E3CE8B /* UIButton+Ex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 477119B026929E0200E3CE8B /* UIButton+Ex.swift */; };
 		477119BC2692FFAB00E3CE8B /* CMBaseTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 477119BB2692FFAB00E3CE8B /* CMBaseTableViewCell.swift */; };
 		477119C12693004500E3CE8B /* CMBannerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 477119C02693004500E3CE8B /* CMBannerCell.swift */; };
+		477A6A292696E31E0062CB28 /* Net.swift in Sources */ = {isa = PBXBuildFile; fileRef = 477A6A282696E31E0062CB28 /* Net.swift */; };
+		477A6A2D2696EDF60062CB28 /* RootViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 477A6A2C2696EDF60062CB28 /* RootViewModel.swift */; };
+		477A6A312696EE980062CB28 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 477A6A302696EE980062CB28 /* HomeViewModel.swift */; };
+		477A6A352697010B0062CB28 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 477A6A342697010B0062CB28 /* API.swift */; };
+		477A6A3C2697053A0062CB28 /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 477A6A3B2697053A0062CB28 /* Reachability.swift */; };
 		477B037F268C54B200DC5173 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 477B037E268C54B200DC5173 /* AppDelegate.swift */; };
 		477B0383268C54B200DC5173 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 477B0382268C54B200DC5173 /* ViewController.swift */; };
 		477B0386268C54B200DC5173 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 477B0384268C54B200DC5173 /* Main.storyboard */; };
@@ -62,6 +67,11 @@
 		477119B026929E0200E3CE8B /* UIButton+Ex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton+Ex.swift"; sourceTree = "<group>"; };
 		477119BB2692FFAB00E3CE8B /* CMBaseTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CMBaseTableViewCell.swift; sourceTree = "<group>"; };
 		477119C02693004500E3CE8B /* CMBannerCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CMBannerCell.swift; sourceTree = "<group>"; };
+		477A6A282696E31E0062CB28 /* Net.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Net.swift; sourceTree = "<group>"; };
+		477A6A2C2696EDF60062CB28 /* RootViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewModel.swift; sourceTree = "<group>"; };
+		477A6A302696EE980062CB28 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		477A6A342697010B0062CB28 /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
+		477A6A3B2697053A0062CB28 /* Reachability.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
 		477B037B268C54B200DC5173 /* WangDepressedMusic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WangDepressedMusic.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		477B037E268C54B200DC5173 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		477B0382268C54B200DC5173 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -126,6 +136,7 @@
 		4763D3E3268DA39B00826708 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				477A6A2B2696EDE80062CB28 /* ViewModel */,
 				4763D3E4268DA41200826708 /* CMTabBarViewController.swift */,
 				4763D3E8268DA55800826708 /* CMNavigationController.swift */,
 				479A1706268F02D800CB1C44 /* CMBaseViewController.swift */,
@@ -182,6 +193,7 @@
 		4763D3F1268DA90D00826708 /* 发现 */ = {
 			isa = PBXGroup;
 			children = (
+				477A6A2F2696EE8E0062CB28 /* ViewModel */,
 				477119B52692FF2800E3CE8B /* Cell */,
 				477119B42692FF2200E3CE8B /* SubView */,
 				4763D3F2268DA96A00826708 /* CMDiscoverViewController.swift */,
@@ -218,6 +230,30 @@
 				477119BB2692FFAB00E3CE8B /* CMBaseTableViewCell.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		477A6A242696D02B0062CB28 /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+				477A6A342697010B0062CB28 /* API.swift */,
+			);
+			path = "New Group";
+			sourceTree = "<group>";
+		};
+		477A6A2B2696EDE80062CB28 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				477A6A2C2696EDF60062CB28 /* RootViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		477A6A2F2696EE8E0062CB28 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				477A6A302696EE980062CB28 /* HomeViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 		477B0372268C54B200DC5173 = {
@@ -260,8 +296,10 @@
 		477B03B8268C696E00DC5173 /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				477A6A242696D02B0062CB28 /* New Group */,
 				477B03C5268C696E00DC5173 /* API */,
 				477B03B9268C696E00DC5173 /* NetWork */,
+				477A6A3B2697053A0062CB28 /* Reachability.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -302,6 +340,7 @@
 			isa = PBXGroup;
 			children = (
 				477B03C6268C696E00DC5173 /* HomeAPI.swift */,
+				477A6A282696E31E0062CB28 /* Net.swift */,
 			);
 			path = API;
 			sourceTree = "<group>";
@@ -531,6 +570,7 @@
 				47CADB412690555E00E2FEF5 /* CMTabbar.swift in Sources */,
 				477B03C8268C696E00DC5173 /* Network.swift in Sources */,
 				477B03C9268C696E00DC5173 /* ErrorTracker.swift in Sources */,
+				477A6A2D2696EDF60062CB28 /* RootViewModel.swift in Sources */,
 				477B03FC268C71AC00DC5173 /* UIEdgeInsetLabel.swift in Sources */,
 				477B03C7268C696E00DC5173 /* TargetType+Rx.swift in Sources */,
 				477B03DD268C69EC00DC5173 /* NSDictionary+Unicode.m in Sources */,
@@ -540,6 +580,8 @@
 				477B03DF268C69EC00DC5173 /* NSString+Unicode.m in Sources */,
 				477B03EE268C716B00DC5173 /* Date+ex.swift in Sources */,
 				477B037F268C54B200DC5173 /* AppDelegate.swift in Sources */,
+				477A6A352697010B0062CB28 /* API.swift in Sources */,
+				477A6A292696E31E0062CB28 /* Net.swift in Sources */,
 				4763D3E9268DA55800826708 /* CMNavigationController.swift in Sources */,
 				4763D3BB268D5E4200826708 /* ThemeManager.swift in Sources */,
 				477B03E0268C69EC00DC5173 /* NSObject+SafeSwizzle.m in Sources */,
@@ -556,9 +598,11 @@
 				477B03CA268C696E00DC5173 /* MapperParameterType.swift in Sources */,
 				477119C12693004500E3CE8B /* CMBannerCell.swift in Sources */,
 				477B03DE268C69EC00DC5173 /* NSArray+Unicode.m in Sources */,
+				477A6A3C2697053A0062CB28 /* Reachability.swift in Sources */,
 				4763D3E5268DA41200826708 /* CMTabBarViewController.swift in Sources */,
 				477119B126929E0200E3CE8B /* UIButton+Ex.swift in Sources */,
 				477B03FD268C71AC00DC5173 /* Toast.swift in Sources */,
+				477A6A312696EE980062CB28 /* HomeViewModel.swift in Sources */,
 				477B03F3268C71A300DC5173 /* Const.swift in Sources */,
 				4763D3F7268DA98800826708 /* CMVoiceViewController.swift in Sources */,
 				4763D3FD268DA9B700826708 /* CMKaraokeViewController.swift in Sources */,

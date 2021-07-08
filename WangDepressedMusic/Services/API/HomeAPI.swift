@@ -14,7 +14,7 @@ enum HomeAPI {
 
 extension HomeAPI: TargetType{
     var baseURL: URL {
-        return URL(string: "https://www.oneoff.net/index.php")!
+        return URL(string: "http://bd-api.kuwo.cn/api/service/category/rec")!
     }
     
     var path: String {
@@ -29,23 +29,20 @@ extension HomeAPI: TargetType{
         "".data(using: .utf8)!
     }
     
-    var task: Task {
-        var parmetars = [String:Any]()
-        parmetars["m"] = "api"
-        parmetars["c"] = "apimap"
-        
-        
+    var task: Task {        
         switch self {
             case .NewHomeLoad(let parm):
-                for (key,value) in parm.reversed() {
-                    parmetars[key] = value
-                }
-                return .requestParameters(parameters: parmetars, encoding: URLEncoding.default)
+                return .requestParameters(parameters: parm, encoding: URLEncoding.default)
         }
     }
     
     var headers: [String : String]? {
-        [:]
+        ["appuid":"132556570707",
+         "channel":"appstore",
+         "devid":"C0072B2A-ED2A-4C70-91E5-8D87D2BA8A55",
+         "brand":"iPhone13,2",
+         "plat":"ip",
+         "ver":"1.2.4"]
     }
     
     

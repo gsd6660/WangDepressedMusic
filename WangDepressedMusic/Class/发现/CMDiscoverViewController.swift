@@ -8,12 +8,36 @@
 import UIKit
 
 class CMDiscoverViewController: CMBaseViewController {
-
+    
+    var dataSource = [Any]()
+    var data = [Any]()
+    let disPoseBg = DisposeBag()
     override func viewDidLoad() {
         super.viewDidLoad()
         self.view.addSubview(tableView)
         
+        var parmters = [String:Any]()
+        parmters.updateValue("1014307", forKey: "uid")
+        parmters.updateValue("token", forKey: "6c407ae42b1c8212de7e5959ae3fd379")
+//        HomeAPI.request(.NewHomeLoad(parmDic: parmters))()
+//            .subscribe { (model) in
+//                self.data.append(model)
+//                self.tableView.reloadData()
+//            } onError: { (error) in
+//
+//            }.disposed(by: disPoseBg)
+        let vm = HomeViewModel()
+        vm.loadHomeApi()
+            .subscribe { (json) in
+                print(json)
+            } onError: { (error) in
+                print(error)
+            }.disposed(by: disPoseBg)
+
     }
+    
+    
+    
 
     lazy var tableView : UITableView = {
         let tab = UITableView.init(frame: CGRect.init(x: 0, y: 0, width: kScreenW, height: kScreenH - kTabbarHeight - kNavBarHeight))
