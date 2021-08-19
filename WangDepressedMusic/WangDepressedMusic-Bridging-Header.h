@@ -18,7 +18,7 @@
 #import <ActiveLabel/ActiveLabel-Swift.h>
 #import <EmptyDataSet_Swift/EmptyDataSet_Swift-Swift.h>
 
-
+#import <SHFullscreenPopGestureSwift/SHFullscreenPopGestureSwift-Swift.h>
 
 #import <MBProgressHUD.h>
 #import <SDCycleScrollView.h>

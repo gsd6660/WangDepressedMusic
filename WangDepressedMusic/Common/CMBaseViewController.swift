@@ -12,8 +12,9 @@ class CMBaseViewController: UIViewController {
    
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.view.theme_backgroundColor = ThemeList.mainBackgroundColor
-        updateTheme()
+        self.view.backgroundColor = viewBackgroundColor
+//        self.view.theme_backgroundColor = ThemeList.mainBackgroundColor
+//        updateTheme()
     }
     
     override func traitCollectionDidChange(_ previousTraitCollection: UITraitCollection?) {
@@ -25,7 +26,8 @@ class CMBaseViewController: UIViewController {
         
         updateTheme()
     }
-
+ 
+    
     private func updateTheme() {
         guard #available(iOS 12.0, *) else { return }
         

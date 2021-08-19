@@ -30,4 +30,3 @@ public extension PrimitiveSequence where Trait == SingleTrait, Element == Respon
     }
 }
 
-
